@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B9350CB-2404-1552-9EA4-15E6CB5D44AD" name="Cliente">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>53ACD423-A2A0-BC5F-B175-90A96E7ECB76</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCliente" id="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombreempresa" id="CD604660-EE78-8D53-1338-1216EB4FE087">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>9BB8444B-47BC-551D-426E-A2E920AB12E8</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RUTempresa" id="ACF1E7C2-6552-166B-7547-CE849A09B247">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>1C7BB5A8-1065-68ED-1C05-48D84BF46241</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_idUsuario" id="D988BCB6-4180-3081-5796-E4AC25A04D1C">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>9B6F0C32-1FD6-09FC-7267-AF2F4EF81299</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7C9F21B-92B1-D4BA-891D-4A5AFC9F6303" referredColumn="6DE0B389-63A5-9412-519A-E634E1BDE252"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32BFFF2A-CB8D-0AE5-6DBD-9278EF0077A8" name="Cliente_PK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>C78FA32D-ED18-DDD6-FE43-8796843E29D5</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26215AC-76DA-5B63-690C-C9458FFB3AB9" name="Cliente_Usuario_FK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>7120C689-680D-1576-8802-E586D58CAEDD</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D988BCB6-4180-3081-5796-E4AC25A04D1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

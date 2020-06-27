@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BBF8CEF-7ED0-31A0-D8A5-7293D4288ABE" name="item">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>DBF36CF7-D96B-7B61-14A0-D680E9557ADD</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idItem" id="FA9ECD84-1F36-DF51-25B0-1A27577775CB">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>7535413B-1A5E-AD19-F874-C58B56F4FE22</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="concepto" id="6F448BC7-14BC-6FE5-7296-9C081CAFA4B4">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>24440D93-6BFB-2917-8DE1-9FBA6C78DAE5</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preciounit" id="DA3CA93C-ABE5-D14E-C5A9-66220F4D9623">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>58E85110-0BA3-8968-D519-71190A07435A</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="EB09C23F-7E9A-6068-5181-730FF816DC3A">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>AA6B8CF6-7A09-825D-9FAB-28CB928DA627</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Factura_idFactura" id="AAF220D3-2B93-193F-1FE4-8F3C7590E4FF">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>0CEC6121-6605-1403-441F-D468AA4C14FA</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94C1D08F-E02E-A1A5-58B7-AE3AD6E6A64B" referredColumn="E4D590D5-1B44-FB39-2EDC-FBA6277CCE73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F308817-9FE9-574E-8B7C-3E4756F7282D" name="item_PK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>853EB854-5B81-C291-93F0-F4BD3E13D28C</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA9ECD84-1F36-DF51-25B0-1A27577775CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24205E95-4451-87ED-E80E-AF4A086B36F3" name="item_Factura_FK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>97D22679-6EC1-F8B6-E799-BD4BA33EF977</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAF220D3-2B93-193F-1FE4-8F3C7590E4FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="consultoriaPrevRiesgo" id="9FF10478-AFC2-3B91-3D67-E36BD3E003B8" version="3.5">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 02:42:43 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9FF10478-AFC2-3B91-3D67-E36BD3E003B8</designId>
+</OSDM_Design>

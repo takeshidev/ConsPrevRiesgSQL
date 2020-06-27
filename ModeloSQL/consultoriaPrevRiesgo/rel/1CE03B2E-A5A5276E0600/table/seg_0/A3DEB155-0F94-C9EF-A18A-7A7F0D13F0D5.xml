@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3DEB155-0F94-C9EF-A18A-7A7F0D13F0D5" name="Factura">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>BCC6E5E2-EB05-4CB0-A794-FA67E081921D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idFactura" id="E4D590D5-1B44-FB39-2EDC-FBA6277CCE73">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>E3B59FB6-F2F3-2D21-E4D9-FA9E6F65F4C0</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IVAaplicable" id="8E2231E9-4223-C773-FE43-07C3A02D6290">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>C7064707-99A1-F0DD-29C3-44CF4AAA625D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaEmision" id="A4AA75BE-9816-78D7-3A5B-21F0FC52C8F4">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>88B46F7F-3E3F-4BD1-D488-30D8FC889D5D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaVencimiento" id="EDEDAE76-65DB-5ECF-3804-766675069F97">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>A1C281F1-A6C5-E00A-3DC8-DE40CE088E94</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_idCliente" id="E0831272-EB38-CDE7-D428-AB8E4651047E">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>929061FD-E82B-2827-0153-5E3EAC8E70D8</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88DAEEC1-943C-48AC-159E-B4B0AC6F7F79" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8635954-E7CD-61BC-6E8A-FB2AB077EEAB" name="Factura_PK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>887EF5C8-DDE9-12D6-0C8B-1CD019F572A7</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4D590D5-1B44-FB39-2EDC-FBA6277CCE73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E11EE1C6-14DB-DF3C-21CC-12073D6DC460" name="Factura_Cliente_FK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>E11DC895-DDA7-B51E-73E8-0B2D297ED52A</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0831272-EB38-CDE7-D428-AB8E4651047E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

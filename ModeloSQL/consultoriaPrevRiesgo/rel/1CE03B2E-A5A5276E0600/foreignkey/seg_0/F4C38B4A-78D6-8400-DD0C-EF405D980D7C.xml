@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F4C38B4A-78D6-8400-DD0C-EF405D980D7C" containerWithKeyObject="E92ADF50-C976-AC36-FFC5-7634FAEDB4C3" localFKIndex="6B6B0983-B06F-9A81-3E32-9E34BCA2B423" name="ReporteAccidente_Cliente_FK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>544D7FB8-AC60-7CEA-B364-8497DA3B3571</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<referredTableLongName>Cliente</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B9350CB-2404-1552-9EA4-15E6CB5D44AD</referredTableID>
+<keyObject>32BFFF2A-CB8D-0AE5-6DBD-9278EF0077A8</keyObject>
+<referredKeyID>32BFFF2A-CB8D-0AE5-6DBD-9278EF0077A8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idCliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
