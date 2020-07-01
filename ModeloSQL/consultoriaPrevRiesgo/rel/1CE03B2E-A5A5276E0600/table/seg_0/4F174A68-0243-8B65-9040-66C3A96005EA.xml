@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F174A68-0243-8B65-9040-66C3A96005EA" name="Usuario">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>CF014553-9D3E-9920-8227-AA98A48118BE</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idUsuario" id="CE033D8D-6756-C7BE-7688-391A3A98DB46">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>D6D98478-C651-598C-67CA-5145FB5F655C</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="CD673671-EEF1-B0F5-A3F9-62D75869D9BD">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>53A66A3A-B1F2-9CB6-8693-75BA30BC34B4</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipoUsuario" id="852249C6-1A3F-4EC7-7FDC-E8EF9E44CE67">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>140138BB-D4E6-38CB-4FA0-79583929B8B6</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clave" id="7B929014-296D-AAE4-566C-485EA3422019">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>CC51283F-D14B-08BE-C9FC-94135B8A2F51</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mail" id="88610624-2D61-2067-4275-DAEC3A88F2D6">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>22AAC459-4176-60AC-E101-5646CCD5A808</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="B2CC9AEC-903E-0177-1270-5CB276833D61">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[0= desactivado
+1=activo]]></commentInRDBMS>
+<generatorID>7639EFB5-4417-0D66-6587-5A76FFB301EB</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0D7D59D-BE10-8646-CA3B-3D9C27324892" name="Usuario_PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
+<generatorID>9E13C780-000F-301E-68B0-E895333DF4CE</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE033D8D-6756-C7BE-7688-391A3A98DB46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

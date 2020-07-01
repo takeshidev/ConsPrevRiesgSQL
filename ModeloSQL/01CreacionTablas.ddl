@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   en:        2020-07-01 02:48:43 CLT
+--   en:        2020-07-01 14:57:47 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -106,8 +106,13 @@ CREATE TABLE usuario (
     usuario      VARCHAR2(100 CHAR),
     tipousuario  VARCHAR2(100 CHAR),
     clave        VARCHAR2(100 CHAR),
-    mail         VARCHAR2(100 CHAR)
+    mail         VARCHAR2(100 CHAR),
+    activo       CHAR(1)
 );
+
+COMMENT ON COLUMN usuario.activo IS
+    '0= desactivado
+1=activo';
 
 ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( idusuario );
 

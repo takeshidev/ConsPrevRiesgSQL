@@ -57,7 +57,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="795F53A2-9D5E-80DB-16E8-9ED9304148C3" referredColumn="722F66C7-3A2C-D27F-3A93-241984FEC34F"/>
+<colAssociation fkAssociation="C1DE56F1-495F-BD6C-80D9-13056E815100" referredColumn="CE033D8D-6756-C7BE-7688-391A3A98DB46"/>
 </associations>
 </Column>
 </columns>
@@ -74,9 +74,9 @@
 <colUsage columnID="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C8B5E27F-7336-E797-9AD9-F7A492FDCE86" name="Cliente_Usuario_FK">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<ind_PK_UK id="1B368457-0890-B009-545E-0EDA8DB9B9B3" name="Cliente_Usuario_FK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
 <generatorID>7120C689-680D-1576-8802-E586D58CAEDD</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>

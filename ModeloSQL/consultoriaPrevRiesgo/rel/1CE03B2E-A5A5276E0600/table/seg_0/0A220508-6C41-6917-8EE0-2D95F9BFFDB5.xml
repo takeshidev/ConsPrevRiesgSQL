@@ -44,7 +44,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="33730D07-459B-FF33-775F-C2207A5F46C7" referredColumn="722F66C7-3A2C-D27F-3A93-241984FEC34F"/>
+<colAssociation fkAssociation="BF051D3E-C6A0-F97F-446E-AE79EAD3EC86" referredColumn="CE033D8D-6756-C7BE-7688-391A3A98DB46"/>
 </associations>
 </Column>
 <Column name="celular" id="DE846A06-C568-1E75-E27C-112DE727623B">
@@ -74,9 +74,9 @@
 <colUsage columnID="13C55F69-17B7-F14A-AD54-5A7C036198E8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1BC61DDD-B296-4929-21A8-288500D925E7" name="Profesional_Usuario_FK">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<ind_PK_UK id="3C2367CE-5BC2-60D2-1A09-1708A5B3C431" name="Profesional_Usuario_FK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:54:12 UTC</createdTime>
 <generatorID>1161D948-1EB2-C440-F194-0D8B42F024EA</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>

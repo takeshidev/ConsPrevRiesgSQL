@@ -83,6 +83,22 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="activo" id="7639EFB5-4417-0D66-6587-5A76FFB301EB">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-01 18:52:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[0= desactivado
+1=activo]]></commentInRDBMS>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9E13C780-000F-301E-68B0-E895333DF4CE" name="Usuario PK">
