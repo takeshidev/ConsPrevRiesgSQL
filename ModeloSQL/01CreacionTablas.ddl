@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   en:        2020-06-30 23:45:20 CLT
+--   en:        2020-07-01 02:48:43 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -31,7 +31,9 @@ CREATE TABLE capacitacion (
     tema               VARCHAR2(100 CHAR),
     objetivos          VARCHAR2(1000 CHAR),
     contenidos         VARCHAR2(1000 CHAR),
-    recursos           VARCHAR2(1000 CHAR)
+    recursos           VARCHAR2(1000 CHAR),
+    fecha              DATE,
+    idusuariopro       INTEGER
 );
 
 ALTER TABLE capacitacion ADD CONSTRAINT capacitacion_pk PRIMARY KEY ( idcapacitacion );
@@ -47,10 +49,11 @@ ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( idcliente );
 
 CREATE TABLE factura (
     idfactura          INTEGER NOT NULL,
-    ivaaplicable       NUMBER,
+    cliente_idcliente  INTEGER NOT NULL,
     fechaemision       DATE,
     fechavencimiento   DATE,
-    cliente_idcliente  INTEGER NOT NULL,
+    fechapago          DATE,
+    ivaaplicable       NUMBER,
     subtotales         FLOAT(12),
     totales            FLOAT(12)
 );
@@ -71,7 +74,6 @@ CREATE TABLE profesional (
     idempleado         INTEGER NOT NULL,
     nombre             VARCHAR2(100 CHAR),
     usuario_idusuario  INTEGER NOT NULL,
-    mail               VARCHAR2(100 CHAR),
     celular            VARCHAR2(100 CHAR)
 );
 

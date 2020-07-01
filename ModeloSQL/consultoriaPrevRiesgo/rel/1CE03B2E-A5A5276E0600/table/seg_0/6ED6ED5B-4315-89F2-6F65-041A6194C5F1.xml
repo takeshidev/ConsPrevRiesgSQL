@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A220508-6C41-6917-8EE0-2D95F9BFFDB5" name="Profesional">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6ED6ED5B-4315-89F2-6F65-041A6194C5F1" name="Admin">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>EDA01CE7-8C19-3378-ECAE-365B3C327761</generatorID>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<generatorID>26FFFC50-2BC7-6B5F-806B-21EA51008B4E</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="idEmpleado" id="13C55F69-17B7-F14A-AD54-5A7C036198E8">
+<Column name="idEmpleado" id="FEC729D6-FCBB-9168-18D5-632FAF091A7E">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>CE8CFC74-9E5E-06CE-6FB8-F1E7883D61FD</generatorID>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<generatorID>445596C0-5F3B-E566-D3AF-C6722B2653AF</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,10 +19,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nombre" id="08E964BE-8D7B-AF35-A1BF-3E519D656431">
+<Column name="nombre" id="EEB5162A-00C6-4D5D-0CB8-3E32CDC482AE">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>415A716D-C62A-7BE9-2687-B088D2FA6487</generatorID>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<generatorID>42E5C195-19F4-2FC2-82F0-5B2BD1646B51</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,10 +32,10 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Usuario_idUsuario" id="5653F104-E607-D9D8-C132-8065B3E8DD36">
+<Column name="Usuario_idUsuario" id="9C6ADF73-4AD7-7870-1BF0-30C51550E102">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>DA511FBF-7410-DC46-D95E-3C6F3AC9DFDF</generatorID>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<generatorID>577010B9-BF71-254C-F19E-24CBF2620DD7</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,45 +44,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="33730D07-459B-FF33-775F-C2207A5F46C7" referredColumn="722F66C7-3A2C-D27F-3A93-241984FEC34F"/>
+<colAssociation fkAssociation="E634158E-76DF-8FF7-3AF2-321921181F7A" referredColumn="722F66C7-3A2C-D27F-3A93-241984FEC34F"/>
 </associations>
-</Column>
-<Column name="celular" id="DE846A06-C568-1E75-E27C-112DE727623B">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>A210EE21-FD8F-2EB3-A464-A710015B4A36</generatorID>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7C955F17-D2E3-5BBF-BD3C-1B5B1DBD61D8" name="Profesional_PK">
+<ind_PK_UK id="252E6200-EB56-A05F-1AE2-A40B3707DC3A" name="Admin_PK">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 03:42:37 UTC</createdTime>
-<generatorID>9C3D0F1F-8B5A-EF9E-ACEB-15D04867204C</generatorID>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
+<generatorID>6965D55A-5960-AB17-DA77-8E39B03E82B2</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="13C55F69-17B7-F14A-AD54-5A7C036198E8"/>
+<colUsage columnID="FEC729D6-FCBB-9168-18D5-632FAF091A7E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1BC61DDD-B296-4929-21A8-288500D925E7" name="Profesional_Usuario_FK">
+<ind_PK_UK id="EEF3AED0-FFA6-FA75-9AEC-EBBAA9F825CB" name="Admin_Usuario_FK">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-07-01 06:44:53 UTC</createdTime>
-<generatorID>1161D948-1EB2-C440-F194-0D8B42F024EA</generatorID>
+<generatorID>02C37C2C-EEC7-9C36-1CFB-D3525B93E9B6</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5653F104-E607-D9D8-C132-8065B3E8DD36"/>
+<colUsage columnID="9C6ADF73-4AD7-7870-1BF0-30C51550E102"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

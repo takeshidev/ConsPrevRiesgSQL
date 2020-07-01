@@ -19,19 +19,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IVAaplicable" id="8E2231E9-4223-C773-FE43-07C3A02D6290">
+<Column name="Cliente_idCliente" id="E0831272-EB38-CDE7-D428-AB8E4651047E">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>C7064707-99A1-F0DD-29C3-44CF4AAA625D</generatorID>
+<generatorID>929061FD-E82B-2827-0153-5E3EAC8E70D8</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>12</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEB3E7ED-8635-1B5E-84A4-6ED91A3AC95C" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
+</associations>
 </Column>
 <Column name="fechaEmision" id="A4AA75BE-9816-78D7-3A5B-21F0FC52C8F4">
 <createdBy>takeshi</createdBy>
@@ -57,20 +57,31 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Cliente_idCliente" id="E0831272-EB38-CDE7-D428-AB8E4651047E">
+<Column name="fechaPago" id="3F9E8FFD-184E-DD1A-D97F-03E98FB5336F">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
-<generatorID>929061FD-E82B-2827-0153-5E3EAC8E70D8</generatorID>
+<createdTime>2020-07-01 06:32:57 UTC</createdTime>
+<generatorID>A3FB18B6-485F-DFD6-027B-95CFBE20EE7F</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="88DAEEC1-943C-48AC-159E-B4B0AC6F7F79" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
-</associations>
+</Column>
+<Column name="IVAaplicable" id="8E2231E9-4223-C773-FE43-07C3A02D6290">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<generatorID>C7064707-99A1-F0DD-29C3-44CF4AAA625D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="subtotales" id="F7F049C2-8930-3F41-5B6D-0F048E0831F0">
 <createdBy>takeshi</createdBy>
@@ -114,9 +125,9 @@
 <colUsage columnID="E4D590D5-1B44-FB39-2EDC-FBA6277CCE73"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E11EE1C6-14DB-DF3C-21CC-12073D6DC460" name="Factura_Cliente_FK">
+<ind_PK_UK id="2FC943DF-8120-AAB8-2D90-531839B7A99E" name="Factura_Cliente_FK">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
 <generatorID>E11DC895-DDA7-B51E-73E8-0B2D297ED52A</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>

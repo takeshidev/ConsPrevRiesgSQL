@@ -66,10 +66,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="82325D15-C86E-A39C-6FAA-5E95267C5490" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
+<colAssociation fkAssociation="825135C5-BB2E-5769-F6D8-560FD5E0D943" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
 </associations>
 </Column>
 </columns>
@@ -86,9 +85,9 @@
 <colUsage columnID="9056B06E-4822-E6AA-FE1C-1D64739FC54A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0BCFC7BB-CEC8-A940-ECAC-5E0DC936DA8B" name="solicitudAsesoria_Cliente_FK">
+<ind_PK_UK id="47C95DBE-9BCC-5B02-703D-2C07B9CAFA98" name="solicitudAsesoria_Cliente_FK">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:50:45 UTC</createdTime>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
 <generatorID>BDD2BFCC-63E0-447E-F6D6-E0E529E794BA</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>

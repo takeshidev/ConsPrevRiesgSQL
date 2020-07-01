@@ -17,10 +17,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="BA929E17-66E2-A0C7-9D41-0043E990005A" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
+<colAssociation fkAssociation="B37D72E9-3442-B4D5-B03C-5CDFB093A8C9" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
 </associations>
 </Column>
 <Column name="idCapacitacion" id="A3E1D767-9A69-0424-D189-A8A6AFB44DDB">
@@ -86,6 +85,30 @@
 <ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="fecha" id="AD16ECB8-5A4C-56FC-8DBE-72CE0FD61AD7">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 06:41:10 UTC</createdTime>
+<generatorID>7638072C-0723-3538-257B-E626F6916DD3</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idUsuarioPro" id="FA0BFFFC-6149-B2D7-A902-677F6C0C4CD8">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 06:41:10 UTC</createdTime>
+<generatorID>789F3F59-196B-38C2-B601-44101642D8C4</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="1DFEA1EA-2367-66FB-B4B2-CF61BAE28402" name="capacitacion_PK">
@@ -100,9 +123,9 @@
 <colUsage columnID="A3E1D767-9A69-0424-D189-A8A6AFB44DDB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0CCB1678-5D02-4C2B-7477-E27CE046A66F" name="capacitacion_Cliente_FK">
+<ind_PK_UK id="7D0CF1B5-C7F8-E980-18F6-420E13AC1479" name="capacitacion_Cliente_FK">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<createdTime>2020-07-01 06:44:53 UTC</createdTime>
 <generatorID>F74A8091-9601-84AC-9E83-553150AE6B20</generatorID>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <indexState>Foreign Key</indexState>

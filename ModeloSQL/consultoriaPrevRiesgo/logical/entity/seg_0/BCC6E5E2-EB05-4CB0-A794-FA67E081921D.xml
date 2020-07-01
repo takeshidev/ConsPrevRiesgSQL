@@ -27,6 +27,74 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="idCliente" id="929061FD-E82B-2827-0153-5E3EAC8E70D8">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:39:58 UTC</createdTime>
+<generatorID>E11DC895-DDA7-B51E-73E8-0B2D297ED52A</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<referedAttribute>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaEmision" id="88B46F7F-3E3F-4BD1-D488-30D8FC889D5D">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:33:27 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaVencimiento" id="A1C281F1-A6C5-E00A-3DC8-DE40CE088E94">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 05:33:57 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaPago" id="A3FB18B6-485F-DFD6-027B-95CFBE20EE7F">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 06:30:41 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IVAaplicable" id="C7064707-99A1-F0DD-29C3-44CF4AAA625D">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-06-27 03:06:19 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
 <Attribute name="subtotales" id="86DC962A-35A3-0A38-3FC0-040E50AA5A66">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-07-01 02:37:33 UTC</createdTime>
@@ -57,69 +125,15 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,12,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="IVAaplicable" id="C7064707-99A1-F0DD-29C3-44CF4AAA625D">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 03:06:19 UTC</createdTime>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>12</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,12,2</ownDataTypeParameters>
-</Attribute>
-<Attribute name="fechaEmision" id="88B46F7F-3E3F-4BD1-D488-30D8FC889D5D">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:33:27 UTC</createdTime>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="fechaVencimiento" id="A1C281F1-A6C5-E00A-3DC8-DE40CE088E94">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:33:57 UTC</createdTime>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="idCliente" id="929061FD-E82B-2827-0153-5E3EAC8E70D8">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:39:58 UTC</createdTime>
-<generatorID>E11DC895-DDA7-B51E-73E8-0B2D297ED52A</generatorID>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
-</engineerTo>
-<referedAttribute>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="887EF5C8-DDE9-12D6-0C8B-1CD019F572A7" name="Factura PK">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-06-27 03:59:34 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

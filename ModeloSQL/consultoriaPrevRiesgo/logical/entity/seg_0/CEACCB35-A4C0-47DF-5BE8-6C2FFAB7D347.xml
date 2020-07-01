@@ -97,14 +97,41 @@
 <dataTypeSize>1000 CHAR</dataTypeSize>
 <ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="fecha" id="7638072C-0723-3538-257B-E626F6916DD3">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 06:34:26 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idUsuarioPro" id="789F3F59-196B-38C2-B601-44101642D8C4">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 06:37:50 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="FFB11721-32B3-D0D2-5DEE-01F821369B2C" name="capacitacion PK">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-07-01 03:22:41 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
