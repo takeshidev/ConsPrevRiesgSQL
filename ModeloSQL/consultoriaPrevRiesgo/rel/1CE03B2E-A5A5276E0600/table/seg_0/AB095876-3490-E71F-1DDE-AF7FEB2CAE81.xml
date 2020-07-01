@@ -58,6 +58,19 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="mail" id="3D01C764-3ACE-D992-5AFC-F46D32B33580">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:41:09 UTC</createdTime>
+<generatorID>22AAC459-4176-60AC-E101-5646CCD5A808</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="324292CE-3ECB-CEBB-8471-4CF2EF8C6D01" name="Usuario_PK">

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF014553-9D3E-9920-8227-AA98A48118BE" name="Usuario">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85DDF07E-25EE-19B6-E088-8D5A126DC419" name="Actividad">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 02:50:05 UTC</createdTime>
+<createdTime>2020-07-01 03:00:12 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idUsuario" id="D6D98478-C651-598C-67CA-5145FB5F655C">
+<Attribute name="idActividad" id="C8ACE5AC-451C-0151-3986-8795D52FDE65">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 02:50:36 UTC</createdTime>
+<createdTime>2020-07-01 03:02:49 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="usuario" id="53A66A3A-B1F2-9CB6-8693-75BA30BC34B4">
+<Attribute name="titulo" id="384525C5-97B1-63A9-59E2-BBB4252AD954">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 02:51:55 UTC</createdTime>
+<createdTime>2020-07-01 03:03:11 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -41,9 +41,9 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipoUsuario" id="140138BB-D4E6-38CB-4FA0-79583929B8B6">
+<Attribute name="descripcion" id="C95D33DA-6D6B-8392-170C-D872945A23EB">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 02:53:36 UTC</createdTime>
+<createdTime>2020-07-01 03:05:22 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -52,12 +52,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clave" id="CC51283F-D14B-08BE-C9FC-94135B8A2F51">
+<Attribute name="fechaplazo" id="7158F869-B848-B789-D8B3-9EF4D55D35AC">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 02:56:01 UTC</createdTime>
+<createdTime>2020-07-01 03:05:11 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -65,13 +65,12 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="mail" id="22AAC459-4176-60AC-E101-5646CCD5A808">
+<Attribute name="status" id="7B3C87D8-B2CC-3B7E-4DDB-2B6A41FF9698">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 03:39:53 UTC</createdTime>
+<createdTime>2020-07-01 03:10:43 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
 <engineerTo>
 <item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
@@ -80,22 +79,49 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comentario" id="4C6BCF3C-7D71-A68C-1922-4D7AC91A8857">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:14:37 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCliente" id="612AFB80-2A83-668D-CB91-65CF4EA7EE50">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:16:36 UTC</createdTime>
+<generatorID>0CBAFB01-23D6-26BF-B46C-F56B3014D7D5</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<referedAttribute>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="9E13C780-000F-301E-68B0-E895333DF4CE" name="Usuario PK">
+<identifier id="F0D1B1DB-234A-0699-7F6F-C55DE620A0F5" name="Actividad PK">
 <createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 03:59:43 UTC</createdTime>
+<createdTime>2020-07-01 03:03:07 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="false"/>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D6D98478-C651-598C-67CA-5145FB5F655C</attributeRef>
+<attributeRef>C8ACE5AC-451C-0151-3986-8795D52FDE65</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

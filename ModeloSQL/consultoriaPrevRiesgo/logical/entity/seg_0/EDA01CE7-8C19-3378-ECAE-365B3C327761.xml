@@ -55,20 +55,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="mail" id="33198B5F-0395-1935-6563-84A6E167DD08">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-06-27 05:44:24 UTC</createdTime>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<engineerTo>
-<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="celular" id="A210EE21-FD8F-2EB3-A464-A710015B4A36">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-06-27 05:46:13 UTC</createdTime>
@@ -84,4 +70,18 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9C3D0F1F-8B5A-EF9E-ACEB-15D04867204C" name="Profesional PK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:42:20 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE8CFC74-9E5E-06CE-6FB8-F1E7883D61FD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -72,6 +72,34 @@
 <colAssociation fkAssociation="88DAEEC1-943C-48AC-159E-B4B0AC6F7F79" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
 </associations>
 </Column>
+<Column name="subtotales" id="F7F049C2-8930-3F41-5B6D-0F048E0831F0">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>86DC962A-35A3-0A38-3FC0-040E50AA5A66</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="totales" id="FDEB2482-8628-AD84-1788-3B34107B487F">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>8A09971F-A57E-D16E-8251-E298C801371C</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C8635954-E7CD-61BC-6E8A-FB2AB077EEAB" name="Factura_PK">

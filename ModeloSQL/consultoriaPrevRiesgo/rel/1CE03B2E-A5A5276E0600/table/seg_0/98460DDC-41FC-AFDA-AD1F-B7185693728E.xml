@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98460DDC-41FC-AFDA-AD1F-B7185693728E" name="Actividad">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>85DDF07E-25EE-19B6-E088-8D5A126DC419</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idActividad" id="18E350ED-5D8B-E2C9-40E7-58CB87212C17">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>C8ACE5AC-451C-0151-3986-8795D52FDE65</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo" id="92A09389-76A9-8E67-B9F8-0D730E156E1E">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>384525C5-97B1-63A9-59E2-BBB4252AD954</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="35CE6EDA-199B-2772-7ABA-7FBDE7B273CB">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>C95D33DA-6D6B-8392-170C-D872945A23EB</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaplazo" id="A2644597-ED93-CCE2-5508-39CB566A6B8B">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>7158F869-B848-B789-D8B3-9EF4D55D35AC</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="0861B5E2-E1CF-EF2E-1F57-8137AED33232">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>7B3C87D8-B2CC-3B7E-4DDB-2B6A41FF9698</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentario" id="2779C5CA-1D83-DEF8-341E-57DD48F19626">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>4C6BCF3C-7D71-A68C-1922-4D7AC91A8857</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_idCliente" id="7A56B27B-AA3D-4FBF-A19C-2F8E7ACEDB4F">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>612AFB80-2A83-668D-CB91-65CF4EA7EE50</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDCE0AC6-F033-4518-71FA-CF2869242FC2" referredColumn="49D71919-F3FE-97FE-8EA0-0D60F0BB9E8B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44FFB50B-0BD4-183C-D661-04A5065063B2" name="Actividad_PK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>F0D1B1DB-234A-0699-7F6F-C55DE620A0F5</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18E350ED-5D8B-E2C9-40E7-58CB87212C17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF88DAE8-E422-5B8D-ED1F-886852DCDABF" name="Actividad_Cliente_FK">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>0CBAFB01-23D6-26BF-B46C-F56B3014D7D5</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A56B27B-AA3D-4FBF-A19C-2F8E7ACEDB4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
