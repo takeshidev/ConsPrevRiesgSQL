@@ -17,7 +17,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>actividadseq</autoIncrementSequenceName>
+<autoIncrementTriggerName>actividadtrig</autoIncrementTriggerName>
 </Column>
 <Column name="titulo" id="249D591E-7221-4250-E158-DB111F4B424D">
 <createdBy>takeshi</createdBy>

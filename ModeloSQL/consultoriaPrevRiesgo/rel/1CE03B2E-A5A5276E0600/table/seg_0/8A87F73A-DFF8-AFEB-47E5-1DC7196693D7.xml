@@ -8,6 +8,18 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCapacitacion" id="A3E1D767-9A69-0424-D189-A8A6AFB44DDB">
+<createdBy>takeshi</createdBy>
+<createdTime>2020-07-01 03:37:59 UTC</createdTime>
+<generatorID>1C5063A6-04E8-0ADE-8788-CAF850CBC7E0</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Cliente_idCliente" id="66480124-D6AA-AA7F-F2C8-C75E0F986FB1">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-07-01 03:37:59 UTC</createdTime>
@@ -21,17 +33,6 @@
 <associations>
 <colAssociation fkAssociation="B37D72E9-3442-B4D5-B03C-5CDFB093A8C9" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
 </associations>
-</Column>
-<Column name="idCapacitacion" id="A3E1D767-9A69-0424-D189-A8A6AFB44DDB">
-<createdBy>takeshi</createdBy>
-<createdTime>2020-07-01 03:37:59 UTC</createdTime>
-<generatorID>1C5063A6-04E8-0ADE-8788-CAF850CBC7E0</generatorID>
-<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="tema" id="78831B3C-C134-743A-32FA-991BCA87D047">
 <createdBy>takeshi</createdBy>
