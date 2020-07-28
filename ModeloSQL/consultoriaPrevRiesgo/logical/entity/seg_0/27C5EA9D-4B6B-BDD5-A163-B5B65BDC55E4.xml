@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="27C5EA9D-4B6B-BDD5-A163-B5B65BDC55E4" name="checklist">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:16:34 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idChecklist" id="BF95659A-2A25-1719-6DFD-6CE043B181B6">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:17:25 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCliente" id="7881DD58-0BFA-53A2-7B11-D8CFB1DCD6E6">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:22:22 UTC</createdTime>
+<generatorID>94E04BD1-B4CE-BD33-8BBD-AC27D307AC24</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<referedAttribute>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="B627F840-D1CF-E263-8B86-7B32C6A2797C">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:18:09 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="64B2E768-77D0-DA4E-3E82-216917D51A67">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:18:34 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comentarios" id="E22A5548-114E-244D-F9E2-3896A53A5857">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:18:34 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28216456-2CD1-5556-0CFF-7F490F63297B" name="checklist PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:17:38 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BF95659A-2A25-1719-6DFD-6CE043B181B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fechahora" id="42FF3DAC-0842-7F26-3C14-ACA943B4D1D0">
+<Attribute name="fechasolicitud" id="42FF3DAC-0842-7F26-3C14-ACA943B4D1D0">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-06-27 04:57:58 UTC</createdTime>
 <ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
@@ -81,6 +81,75 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="9C09DC83-039E-9B72-A358-D53BADF4A78E">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:10:50 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaagendada" id="123CDDF7-569E-5860-B68A-87D0BA777A09">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:12:30 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lugar" id="1509CA06-A338-4CA3-418C-42380E0458E0">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:13:50 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contacto" id="5F611C8F-0AA7-8135-B3AA-60F98359A751">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:13:51 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="detalle" id="F416D854-24E1-3100-2FB2-1374366B1084">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:13:51 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
