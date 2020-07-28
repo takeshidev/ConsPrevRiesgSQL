@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   en:        2020-07-01 21:20:11 CLT
+--   en:        2020-07-28 18:31:05 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -38,6 +38,16 @@ CREATE TABLE capacitacion (
 
 ALTER TABLE capacitacion ADD CONSTRAINT capacitacion_pk PRIMARY KEY ( idcapacitacion );
 
+CREATE TABLE checklist (
+    idchecklist        INTEGER NOT NULL,
+    cliente_idcliente  INTEGER NOT NULL,
+    descripcion        VARCHAR2(1000 CHAR),
+    status             VARCHAR2(1000 CHAR),
+    comentarios        VARCHAR2(1000 CHAR)
+);
+
+ALTER TABLE checklist ADD CONSTRAINT checklist_pk PRIMARY KEY ( idchecklist );
+
 CREATE TABLE cliente (
     idcliente          INTEGER NOT NULL,
     nombreempresa      VARCHAR2(100 CHAR),
@@ -70,6 +80,16 @@ CREATE TABLE item (
 
 ALTER TABLE item ADD CONSTRAINT item_pk PRIMARY KEY ( iditem );
 
+CREATE TABLE pregunta (
+    idpregunta             INTEGER NOT NULL,
+    checklist_idchecklist  INTEGER NOT NULL,
+    pregunta               VARCHAR2(1000 CHAR),
+    respuesta              VARCHAR2(100 CHAR),
+    comentarios            VARCHAR2(1000 CHAR)
+);
+
+ALTER TABLE pregunta ADD CONSTRAINT pregunta_pk PRIMARY KEY ( idpregunta );
+
 CREATE TABLE profesional (
     idempleado         INTEGER NOT NULL,
     nombre             VARCHAR2(100 CHAR),
@@ -93,10 +113,15 @@ ALTER TABLE reporteaccidente ADD CONSTRAINT reporteaccidente_pk PRIMARY KEY ( id
 
 CREATE TABLE solicitudasesoria (
     idsolicitud         INTEGER NOT NULL,
-    fechahora           DATE,
+    fechasolicitud      DATE,
     motivo              VARCHAR2(1000 CHAR),
     preferenciahorario  VARCHAR2(100 CHAR),
-    cliente_idcliente   INTEGER NOT NULL
+    cliente_idcliente   INTEGER NOT NULL,
+    status              VARCHAR2(20 CHAR),
+    fechaagendada       DATE,
+    lugar               VARCHAR2(1000 CHAR),
+    contacto            VARCHAR2(1000 CHAR),
+    detalle             VARCHAR2(1000 CHAR)
 );
 
 ALTER TABLE solicitudasesoria ADD CONSTRAINT solicitudasesoria_pk PRIMARY KEY ( idsolicitud );
@@ -128,6 +153,10 @@ ALTER TABLE capacitacion
     ADD CONSTRAINT capacitacion_cliente_fk FOREIGN KEY ( cliente_idcliente )
         REFERENCES cliente ( idcliente );
 
+ALTER TABLE checklist
+    ADD CONSTRAINT checklist_cliente_fk FOREIGN KEY ( cliente_idcliente )
+        REFERENCES cliente ( idcliente );
+
 ALTER TABLE cliente
     ADD CONSTRAINT cliente_usuario_fk FOREIGN KEY ( usuario_idusuario )
         REFERENCES usuario ( idusuario );
@@ -139,6 +168,10 @@ ALTER TABLE factura
 ALTER TABLE item
     ADD CONSTRAINT item_factura_fk FOREIGN KEY ( factura_idfactura )
         REFERENCES factura ( idfactura );
+
+ALTER TABLE pregunta
+    ADD CONSTRAINT pregunta_checklist_fk FOREIGN KEY ( checklist_idchecklist )
+        REFERENCES checklist ( idchecklist );
 
 ALTER TABLE profesional
     ADD CONSTRAINT profesional_usuario_fk FOREIGN KEY ( usuario_idusuario )
@@ -244,9 +277,9 @@ END;
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            10
+-- CREATE TABLE                            12
 -- CREATE INDEX                             0
--- ALTER TABLE                             19
+-- ALTER TABLE                             23
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
