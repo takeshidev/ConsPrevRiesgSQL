@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28F6C9AF-42DE-092B-097F-CF49B88A0FA5" name="checklist">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>27C5EA9D-4B6B-BDD5-A163-B5B65BDC55E4</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idChecklist" id="23A6BAC8-ED96-73B3-3A65-E7A49C6C5193">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>BF95659A-2A25-1719-6DFD-6CE043B181B6</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_idCliente" id="4A206E3A-BF6B-8611-DDF9-95ABBBA6DD8D">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>7881DD58-0BFA-53A2-7B11-D8CFB1DCD6E6</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72FABE3E-2736-DF67-4B51-F3907E2FB1B8" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
+</associations>
+</Column>
+<Column name="descripcion" id="D7D45073-1778-4212-8546-F9068E2937AD">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>B627F840-D1CF-E263-8B86-7B32C6A2797C</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="D64FBD54-5C70-EEB8-CC2F-70D9E4DDCC57">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>64B2E768-77D0-DA4E-3E82-216917D51A67</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentarios" id="2B51309F-FC0C-05A6-9313-BBAB0E6A0713">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>E22A5548-114E-244D-F9E2-3896A53A5857</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89CC3835-DCC6-1A05-F497-E45D5FCD7057" name="checklist_PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>28216456-2CD1-5556-0CFF-7F490F63297B</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23A6BAC8-ED96-73B3-3A65-E7A49C6C5193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E656CB32-0CE9-E6A0-C920-3DE386CC8B35" name="checklist_Cliente_FK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>94E04BD1-B4CE-BD33-8BBD-AC27D307AC24</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A206E3A-BF6B-8611-DDF9-95ABBBA6DD8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

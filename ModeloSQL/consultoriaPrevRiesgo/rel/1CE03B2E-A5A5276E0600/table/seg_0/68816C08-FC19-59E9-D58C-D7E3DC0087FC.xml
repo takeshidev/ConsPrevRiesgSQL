@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68816C08-FC19-59E9-D58C-D7E3DC0087FC" name="pregunta">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>1D885F95-7901-FD46-DE22-42D94048157B</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPregunta" id="98E084AA-D9A4-3F05-2E21-C6A4FF2CE22B">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>1AB453D5-C673-DD36-2A4C-A85C6C80C096</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="checklist_idChecklist" id="906FFD8D-B6B8-A69F-7661-C4A446E1CF85">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>A483AF0A-F8C0-28DA-1F1E-29E915701A5D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA6C1ACA-AFD0-2E88-212D-86B5C603F43A" referredColumn="23A6BAC8-ED96-73B3-3A65-E7A49C6C5193"/>
+</associations>
+</Column>
+<Column name="pregunta" id="96C6D594-8187-959B-1855-ADC5575DBB51">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>1BB6AB6F-491F-3427-CF88-8EFCF18D866A</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="respuesta" id="011D4F15-641D-A296-EE2B-54042DB35691">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>23DD2956-9195-712C-FF3E-19D9FF748EBE</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentarios" id="3D9A10C5-FC87-5013-189A-882DE4DAC2F9">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>98785693-F265-0623-63F7-3B2A5362CEA9</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6AED00A-454C-6202-2612-940E0917801E" name="pregunta_PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>AC8A2BFF-CC80-7A6F-FB2B-7C36E547477A</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98E084AA-D9A4-3F05-2E21-C6A4FF2CE22B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D85EEA1-C860-3AD1-F4E4-BCB1AEA84BC9" name="pregunta_checklist_FK">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>97880035-AE22-0C7B-0E28-66233A56BB1E</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="906FFD8D-B6B8-A69F-7661-C4A446E1CF85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

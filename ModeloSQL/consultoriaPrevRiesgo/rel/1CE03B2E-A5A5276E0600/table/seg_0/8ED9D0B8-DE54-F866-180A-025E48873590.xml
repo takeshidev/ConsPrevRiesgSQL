@@ -20,7 +20,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fechahora" id="A738DFDB-8508-BF81-B9B6-D8ADC31AB245">
+<Column name="fechasolicitud" id="A738DFDB-8508-BF81-B9B6-D8ADC31AB245">
 <createdBy>takeshi</createdBy>
 <createdTime>2020-06-27 05:50:45 UTC</createdTime>
 <generatorID>42FF3DAC-0842-7F26-3C14-ACA943B4D1D0</generatorID>
@@ -71,6 +71,70 @@
 <associations>
 <colAssociation fkAssociation="825135C5-BB2E-5769-F6D8-560FD5E0D943" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
 </associations>
+</Column>
+<Column name="status" id="A8FBD212-9FFF-E682-5278-248CDF9B662E">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>9C09DC83-039E-9B72-A358-D53BADF4A78E</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaagendada" id="A46C50B1-A55C-9F41-AF14-D5B9D6BA4189">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>123CDDF7-569E-5860-B68A-87D0BA777A09</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lugar" id="E566CF5D-86D0-E841-CBC1-75DE5553DCFC">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>1509CA06-A338-4CA3-418C-42380E0458E0</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contacto" id="7CEC53BD-BE87-2B2A-3EFA-E99F0C34A5A5">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>5F611C8F-0AA7-8135-B3AA-60F98359A751</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalle" id="DE891806-D0CD-242F-365D-1AE33193A3B5">
+<createdBy>takes</createdBy>
+<createdTime>2020-07-28 22:24:04 UTC</createdTime>
+<generatorID>F416D854-24E1-3100-2FB2-1374366B1084</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
