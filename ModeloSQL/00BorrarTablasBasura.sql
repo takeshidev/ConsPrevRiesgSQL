@@ -6,5 +6,6 @@ PARA BORRAR DATOS AUTO GENERADOS POR EL ORACLE
 SELECT 'DROP TABLE "' || TABLE_NAME || '" CASCADE CONSTRAINTS;' FROM user_tables;
 select 'drop sequence ' || sequence_name || ';' from user_sequences;
 ALTER SESSION SET PLSCOPE_SETTINGS = 'IDENTIFIERS:NONE';
-
-
+/*
+3. Ejecutar el resto del script
+*/

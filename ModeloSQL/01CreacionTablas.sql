@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   en:        2020-07-28 18:31:05 CLT
+--   en:        2020-07-29 19:00:55 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -207,6 +207,17 @@ BEGIN
 END;
 /
 
+CREATE SEQUENCE checklist_idchecklist_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER checklist_idchecklist_trg BEFORE
+    INSERT ON checklist
+    FOR EACH ROW
+    WHEN ( new.idchecklist IS NULL )
+BEGIN
+    :new.idchecklist := checklist_idchecklist_seq.nextval;
+END;
+/
+
 CREATE SEQUENCE cliente_idcliente_seq START WITH 1 NOCACHE ORDER;
 
 CREATE OR REPLACE TRIGGER cliente_idcliente_trg BEFORE
@@ -237,6 +248,17 @@ CREATE OR REPLACE TRIGGER item_iditem_trg BEFORE
     WHEN ( new.iditem IS NULL )
 BEGIN
     :new.iditem := item_iditem_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE pregunta_idpregunta_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER pregunta_idpregunta_trg BEFORE
+    INSERT ON pregunta
+    FOR EACH ROW
+    WHEN ( new.idpregunta IS NULL )
+BEGIN
+    :new.idpregunta := pregunta_idpregunta_seq.nextval;
 END;
 /
 
@@ -286,7 +308,7 @@ END;
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                           8
+-- CREATE TRIGGER                          10
 -- ALTER TRIGGER                            0
 -- CREATE COLLECTION TYPE                   0
 -- CREATE STRUCTURED TYPE                   0
@@ -299,7 +321,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          8
+-- CREATE SEQUENCE                         10
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE MATERIALIZED VIEW LOG             0
 -- CREATE SYNONYM                           0
