@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="963B61DE-C956-954E-57A0-CA6AF248DACB" name="CasoAsesoria">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>CDD2F82A-8A6E-BE27-5328-037908672E79</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCaso" id="D41A9F5E-7510-5888-763D-D89B59816243">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>F9F1376E-324F-DC29-14B4-B1198B8222BF</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_idCliente" id="D7AEF3B7-17F8-CAC5-FD31-205D28407E0D">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>EF0D03FC-9619-C5AE-E59C-DEDD0468611D</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34EA7F36-9BE7-AF4C-5DBB-1721C50D54AE" referredColumn="DCD69DC5-52E4-D0A1-610A-94E3B275F523"/>
+</associations>
+</Column>
+<Column name="codigoContrato" id="74F41147-FE49-D73B-F96F-A6C7959E40AF">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>EC66CB84-76A4-FE62-59E5-8FBC50B67E80</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plan" id="FA68C817-5464-43C8-2D70-A87C92355124">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>EEC185FA-12DA-7A66-EDE6-C2C2A5596ED7</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contacto" id="B2D60D70-D082-448F-0203-413909372518">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>D317A7CC-EA6E-F9CC-64E0-2B4339A4DDF7</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="casoactivo" id="57F2038E-CF0B-F57C-6AD3-C1099753EF5F">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>87A9AC06-FAFF-B504-04E1-7BA87AE69DAD</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8DAF03F-213C-EC98-94E5-9987D730B5AF" name="CasoAsesoria_PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>961DF138-BDFF-0086-3AA4-925E400D9078</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D41A9F5E-7510-5888-763D-D89B59816243"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F0F0B9-C753-A5D6-592A-8905E721D32B" name="CasoAsesoria_Cliente_FK">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:41:46 UTC</createdTime>
+<generatorID>38FAA1A3-CA8D-C3C9-4F26-FA3BFB900592</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7AEF3B7-17F8-CAC5-FD31-205D28407E0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

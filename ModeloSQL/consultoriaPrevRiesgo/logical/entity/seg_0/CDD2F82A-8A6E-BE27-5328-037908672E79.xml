@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDD2F82A-8A6E-BE27-5328-037908672E79" name="CasoAsesoria">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:14:17 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idCaso" id="F9F1376E-324F-DC29-14B4-B1198B8222BF">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:20:41 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idCliente" id="EF0D03FC-9619-C5AE-E59C-DEDD0468611D">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:21:39 UTC</createdTime>
+<generatorID>38FAA1A3-CA8D-C3C9-4F26-FA3BFB900592</generatorID>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<referedAttribute>ACD4F865-9D7D-B06E-D685-BF71A5D3E01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigoContrato" id="EC66CB84-76A4-FE62-59E5-8FBC50B67E80">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:22:18 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan" id="EEC185FA-12DA-7A66-EDE6-C2C2A5596ED7">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:26:13 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contacto" id="D317A7CC-EA6E-F9CC-64E0-2B4339A4DDF7">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:40:39 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="casoactivo" id="87A9AC06-FAFF-B504-04E1-7BA87AE69DAD">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:24:00 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="961DF138-BDFF-0086-3AA4-925E400D9078" name="CasoAsesoria PK">
+<createdBy>takes</createdBy>
+<createdTime>2020-08-05 19:21:04 UTC</createdTime>
+<ownerDesignName>consultoriaPrevRiesgo</ownerDesignName>
+<engineerTo>
+<item key="1CE03B2E-E660-81EB-F4D5-A5A5276E0600" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9F1376E-324F-DC29-14B4-B1198B8222BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   en:        2020-07-29 19:00:55 CLT
+--   en:        2020-08-05 15:55:08 CLT
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -25,6 +25,17 @@ CREATE TABLE admin (
 
 ALTER TABLE admin ADD CONSTRAINT admin_pk PRIMARY KEY ( idempleado );
 
+CREATE TABLE asesoria (
+    idasesoria           INTEGER NOT NULL,
+    casoasesoria_idcaso  INTEGER NOT NULL,
+    fechaasesoria        DATE,
+    profesional          INTEGER,
+    lugar                VARCHAR2(1000 CHAR),
+    comentarios          VARCHAR2(1000 CHAR)
+);
+
+ALTER TABLE asesoria ADD CONSTRAINT asesoria_pk PRIMARY KEY ( idasesoria );
+
 CREATE TABLE capacitacion (
     idcapacitacion     INTEGER NOT NULL,
     cliente_idcliente  INTEGER NOT NULL,
@@ -37,6 +48,17 @@ CREATE TABLE capacitacion (
 );
 
 ALTER TABLE capacitacion ADD CONSTRAINT capacitacion_pk PRIMARY KEY ( idcapacitacion );
+
+CREATE TABLE casoasesoria (
+    idcaso             INTEGER NOT NULL,
+    cliente_idcliente  INTEGER NOT NULL,
+    codigocontrato     VARCHAR2(100 CHAR),
+    plan               VARCHAR2(100 CHAR),
+    contacto           VARCHAR2(100 CHAR),
+    casoactivo         VARCHAR2(100 CHAR)
+);
+
+ALTER TABLE casoasesoria ADD CONSTRAINT casoasesoria_pk PRIMARY KEY ( idcaso );
 
 CREATE TABLE checklist (
     idchecklist        INTEGER NOT NULL,
@@ -149,8 +171,16 @@ ALTER TABLE admin
     ADD CONSTRAINT admin_usuario_fk FOREIGN KEY ( usuario_idusuario )
         REFERENCES usuario ( idusuario );
 
+ALTER TABLE asesoria
+    ADD CONSTRAINT asesoria_casoasesoria_fk FOREIGN KEY ( casoasesoria_idcaso )
+        REFERENCES casoasesoria ( idcaso );
+
 ALTER TABLE capacitacion
     ADD CONSTRAINT capacitacion_cliente_fk FOREIGN KEY ( cliente_idcliente )
+        REFERENCES cliente ( idcliente );
+
+ALTER TABLE casoasesoria
+    ADD CONSTRAINT casoasesoria_cliente_fk FOREIGN KEY ( cliente_idcliente )
         REFERENCES cliente ( idcliente );
 
 ALTER TABLE checklist
@@ -196,6 +226,17 @@ BEGIN
 END;
 /
 
+CREATE SEQUENCE asesoria_idasesoria_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER asesoria_idasesoria_trg BEFORE
+    INSERT ON asesoria
+    FOR EACH ROW
+    WHEN ( new.idasesoria IS NULL )
+BEGIN
+    :new.idasesoria := asesoria_idasesoria_seq.nextval;
+END;
+/
+
 CREATE SEQUENCE capacitacion_idcapacitacion START WITH 1 NOCACHE ORDER;
 
 CREATE OR REPLACE TRIGGER capacitacion_idcapacitacion BEFORE
@@ -204,6 +245,17 @@ CREATE OR REPLACE TRIGGER capacitacion_idcapacitacion BEFORE
     WHEN ( new.idcapacitacion IS NULL )
 BEGIN
     :new.idcapacitacion := capacitacion_idcapacitacion.nextval;
+END;
+/
+
+CREATE SEQUENCE casoasesoria_idcaso_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER casoasesoria_idcaso_trg BEFORE
+    INSERT ON casoasesoria
+    FOR EACH ROW
+    WHEN ( new.idcaso IS NULL )
+BEGIN
+    :new.idcaso := casoasesoria_idcaso_seq.nextval;
 END;
 /
 
@@ -299,16 +351,16 @@ END;
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            12
+-- CREATE TABLE                            14
 -- CREATE INDEX                             0
--- ALTER TABLE                             23
+-- ALTER TABLE                             27
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                          10
+-- CREATE TRIGGER                          12
 -- ALTER TRIGGER                            0
 -- CREATE COLLECTION TYPE                   0
 -- CREATE STRUCTURED TYPE                   0
@@ -321,7 +373,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                         10
+-- CREATE SEQUENCE                         12
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE MATERIALIZED VIEW LOG             0
 -- CREATE SYNONYM                           0
